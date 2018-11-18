@@ -34,8 +34,6 @@
 
     
         
-        <link rel="stylesheet" href="../styles/website.css">
-        
     
         
     
@@ -59,6 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -92,7 +92,7 @@
                 <a href="../">
             
                     
-                    Introduction
+                    Contents
             
                 </a>
             
@@ -100,14 +100,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" >
+        <li class="chapter " data-level="1.2" data-path="./">
             
-                <span>
+                <a href="./">
             
                     
-                    Chapter 02 Creating and Destroying Objects
+                    Chapter 02
             
-                </span>
+                </a>
             
 
             
@@ -187,24 +187,12 @@
 </li>
 <li>Return an object of any subtype of their return type<ul>
 <li>An API can return objects without making their classes public</li>
-<li>Interface-based frameworks</li>
+<li>Application: interface-based frameworks (item 20)</li>
 </ul>
 </li>
 <li>The class of returned object can vary from call to call as a function of the input parameters</li>
-<li><p>The class of returned object need not exist when the class containing the method is written</p>
-<ul>
-<li><p>Service provider framework</p>
-<ul>
-<li><p>A system in which providers implement a service, and the system makes the implementations available to clients, decoupling the clients from the implementation.</p>
-<p>Component | Description | JDBC Example
----- | ---- | ----
-Service interface | Represent an implementation | <code>Connection</code>
-Provider registration API | Used by provider to register an implementation | <code>DriverManager.registerDriver</code>
-Service access API | Used by clients to obtain instances of the service | <code>DriverManager.getConnection</code>
-Service provider interface (optional) | Describe a factory object that produces instances of the service interface | <code>Driver</code></p>
-</li>
-</ul>
-</li>
+<li>The class of returned object need not exist when the class containing the method is written<ul>
+<li>Application: <a href="#service-provider-framework">service provider framework</a></li>
 </ul>
 </li>
 </ul>
@@ -265,6 +253,39 @@ Service provider interface (optional) | Describe a factory object that produces 
 </tr>
 </tbody>
 </table>
+<h2 id="service-provider-framework">Service provider framework</h2>
+<p>A system in which providers implement a service, and the system makes the implementations available to clients, decoupling the clients from the implementation.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+<th>JDBC Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Service interface</td>
+<td>Represent an implementation</td>
+<td><code>Connection</code></td>
+</tr>
+<tr>
+<td>Provider registration API</td>
+<td>Used by provider to register an implementation</td>
+<td><code>DriverManager.registerDriver</code></td>
+</tr>
+<tr>
+<td>Service access API</td>
+<td>Used by clients to obtain instances of the service</td>
+<td><code>DriverManager.getConnection</code></td>
+</tr>
+<tr>
+<td>Service provider interface (optional)</td>
+<td>Describe a factory object that produces instances of the service interface</td>
+<td><code>Driver</code></td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -292,6 +313,10 @@ Service provider interface (optional) | Describe a factory object that produces 
 
             
                 
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Chapter 02">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
                 
             
         
@@ -300,7 +325,7 @@ Service provider interface (optional) | Describe a factory object that produces 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Item 01: static factory","level":"1.2.1","depth":2,"previous":{"title":"Chapter 02 Creating and Destroying Objects","level":"1.2","depth":1,"ref":"","articles":[{"title":"Item 01: static factory","level":"1.2.1","depth":2,"path":"chapter-02/item-01.md","ref":"chapter-02/item-01.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-02/item-01.md","mtime":"2018-11-18T22:33:59.177Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-18T22:43:26.446Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Item 01: static factory","level":"1.2.1","depth":2,"previous":{"title":"Chapter 02","level":"1.2","depth":1,"path":"chapter-02/README.md","ref":"chapter-02/README.md","articles":[{"title":"Item 01: static factory","level":"1.2.1","depth":2,"path":"chapter-02/item-01.md","ref":"chapter-02/item-01.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-02/item-01.md","mtime":"2018-11-18T23:25:21.013Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-18T23:29:17.249Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
