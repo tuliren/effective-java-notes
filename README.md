@@ -11,3 +11,6 @@ Third Edition
 * [Item 07: memory leak](items/item-07.md)
 * [Item 08: no finalizer](items/item-08.md)
 * [Item 09: try with resource](items/item-09.md)
+
+## Chapter 03 Methods Common to All Objects
+* [Item 10: `equals` method](items/item-10.md)
