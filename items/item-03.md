@@ -3,8 +3,7 @@
 - A singleton is a class that is instantiated exactly once.
 - Making a class a singleton can make it difficult to test its clients.
 
-## Singleton implementation
-1. Final field
+## Singleton as final field
 - The public field makes it clear that this class is a singleton.
 - Simple.
 
@@ -19,7 +18,7 @@ public class Elvis {
 ```
 
 
-2. Static factory method
+## Singleton with static factory method
 - Provide flexibility about whether the class is a singleton without changing its API.
 - If necessary, can write a generic singleton factory ([item 30](item-30.md)).
 - A method reference can be used as a supplier. `Elvis::instance` is a `Supplier<Elvis>`.
@@ -44,7 +43,7 @@ public class Elvis {
 }
 ```
 
-3. Declare a single-element enum
+## Singleton as single-element enum
 - Provide serialization machinery for free.
 - Provide an ironclad guarantee against multiple instantiation.
 - Best way to implement a singleton.
