@@ -1,5 +1,5 @@
 # Effective Java Notes
-Third Edition
+[Third Edition](https://www.pearson.com/us/higher-education/program/Bloch-Effective-Java-3rd-Edition/PGM1763855.html) by Joshua Bloch
 
 ## Chapter 02 Creating and Destroying Objects
 * [Item 01: static factory](items/item-01.md)
