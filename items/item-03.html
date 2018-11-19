@@ -208,12 +208,11 @@
 <li>A singleton is a class that is instantiated exactly once.</li>
 <li>Making a class a singleton can make it difficult to test its clients.</li>
 </ul>
-<h2 id="singleton-implementation">Singleton implementation</h2>
-<ol>
-<li>Final field</li>
+<h2 id="singleton-as-final-field">Singleton as final field</h2>
+<ul>
 <li>The public field makes it clear that this class is a singleton.</li>
 <li>Simple.</li>
-</ol>
+</ul>
 <pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Elvis</span> </span>{
   <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Elvis INSTANCE = <span class="hljs-keyword">new</span> Elvis();
 
@@ -222,8 +221,8 @@
   }
 }
 </code></pre>
-<ol>
-<li>Static factory method</li>
+<h2 id="singleton-with-static-factory-method">Singleton with static factory method</h2>
+<ul>
 <li>Provide flexibility about whether the class is a singleton without changing its API.</li>
 <li>If necessary, can write a generic singleton factory (<a href="item-30.md">item 30</a>).</li>
 <li>A method reference can be used as a supplier. <code>Elvis::instance</code> is a <code>Supplier&lt;Elvis&gt;</code>.</li>
@@ -232,7 +231,7 @@
 }
 </code></pre>
 </li>
-</ol>
+</ul>
 <pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Elvis</span> </span>{
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Elvis INSTANCE = <span class="hljs-keyword">new</span> Elvis();
 
@@ -245,12 +244,12 @@
   }
 }
 </code></pre>
-<ol>
-<li>Declare a single-element enum</li>
+<h2 id="singleton-as-single-element-enum">Singleton as single-element enum</h2>
+<ul>
 <li>Provide serialization machinery for free.</li>
 <li>Provide an ironclad guarantee against multiple instantiation.</li>
 <li>Best way to implement a singleton.</li>
-</ol>
+</ul>
 <pre><code>public enum Elvis {
   INSTANCE;
 
@@ -295,7 +294,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Item 03: enum singleton","level":"1.2.3","depth":2,"previous":{"title":"Item 02: builder","level":"1.2.2","depth":2,"path":"items/item-02.md","ref":"items/item-02.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"items/item-03.md","mtime":"2018-11-19T04:31:51.541Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-19T04:34:33.145Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Item 03: enum singleton","level":"1.2.3","depth":2,"previous":{"title":"Item 02: builder","level":"1.2.2","depth":2,"path":"items/item-02.md","ref":"items/item-02.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"items/item-03.md","mtime":"2018-11-19T04:36:34.763Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-19T04:36:55.079Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
