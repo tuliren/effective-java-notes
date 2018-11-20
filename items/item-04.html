@@ -17,6 +17,14 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-forkmegithub/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -283,7 +291,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="item-04-enforce-noninstantiability-with-a-private-constructor">Item 04: Enforce noninstantiability with a private constructor</h1>
+                                <h1 id="item-04-enforce-noninstantiability-with-a-private-constructor"><a name="item-04-enforce-noninstantiability-with-a-private-constructor" class="plugin-anchor" href="#item-04-enforce-noninstantiability-with-a-private-constructor"><i class="fa fa-link" aria-hidden="true"></i></a>Item 04: Enforce noninstantiability with a private constructor</h1>
 <pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UtilityClass</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">UtilityClass</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> AssertionError();
@@ -337,7 +345,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Item 04: private constructor","level":"1.2.4","depth":2,"next":{"title":"Item 05: dependency injection","level":"1.2.5","depth":2,"path":"items/item-05.md","ref":"items/item-05.md","articles":[]},"previous":{"title":"Item 03: enum singleton","level":"1.2.3","depth":2,"path":"items/item-03.md","ref":"items/item-03.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"items/item-04.md","mtime":"2018-11-19T05:27:41.576Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-19T09:05:06.393Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Item 04: private constructor","level":"1.2.4","depth":2,"next":{"title":"Item 05: dependency injection","level":"1.2.5","depth":2,"path":"items/item-05.md","ref":"items/item-05.md","articles":[]},"previous":{"title":"Item 03: enum singleton","level":"1.2.3","depth":2,"path":"items/item-03.md","ref":"items/item-03.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","forkmegithub","anchors"],"pluginsConfig":{"forkmegithub":{"color":"darkblue","url":"https://github.com/tuliren/effective-java-notes"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"items/item-04.md","mtime":"2018-11-19T09:05:15.885Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-20T04:24:15.882Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -345,6 +353,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-forkmegithub/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -360,10 +372,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         
