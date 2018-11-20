@@ -1,13 +1,14 @@
 {
   "plugins": [
     "-sharing",
-    "forkmegithub",
-    "anchors"
+    "github",
+    "anchors",
+    "splitter"
   ],
+
   "pluginsConfig": {
-    "forkmegithub": {
-      "url": "https://github.com/tuliren/effective-java-notes",
-      "color": "darkblue"
+    "github": {
+      "url": "https://github.com/tuliren/effective-java-notes"
     }
   }
 }
